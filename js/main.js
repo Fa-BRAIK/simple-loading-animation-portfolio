@@ -16,3 +16,10 @@ const removeLoadingAnimation = function() {
         }, 10)
     }, 2000) 
 }
+
+let stateCheck = setInterval(() => {
+    if (document.readyState === 'complete') {
+        clearInterval(stateCheck)
+        removeLoadingAnimation()
+    }
+}, 100)
