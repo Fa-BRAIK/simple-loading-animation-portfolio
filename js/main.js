@@ -11,8 +11,10 @@ const removeLoadingAnimation = function() {
             
             if (targetedDiv.style.opacity > 0) 
                 targetedDiv.style.opacity -= 0.1
-            else 
+            else {
+                targetedDiv.parentNode.removeChild(targetedDiv)
                 clearInterval(fadeIn)
+            }
         }, 10)
     }, 2000) 
 }
