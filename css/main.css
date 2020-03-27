@@ -29,7 +29,7 @@
     25% {
         height: 100px;
         width: 100px;
-        transform: rotate(0);
+        transform: rotate(0deg);
     }
 
     45% {
